@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Expense Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-cover bg-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://images.pexels.com/photos/6963017/pexels-photo-6963017.jpeg')] flex items-center justify-center min-h-screen px-4 p-0 m-0">
+
+  <div class="bg-[#222222] w-full max-w-md p-10 rounded-3xl shadow-xl text-center">
+    
+    <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-2xl">
+      💸
+    </div>
+
+    <h1 class="text-2xl font-semibold text-white mb-1">Welcome back</h1>
+    <p class="text-sm text-gray-500 mb-8">Sign in to continue tracking expenses</p>
+
+    <button
+      onclick="handleGoogleLogin()"
+      class="w-full flex items-center justify-center gap-3 border border-gray-300 hover:border-gray-400 text-white px-5 py-3 rounded-xl transition shadow-sm hover:shadow-md">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-5 w-5" />
+      <span class="text-sm font-medium">Continue with Google</span>
+    </button>
+
+    <p class="text-xs text-gray-400 mt-6">
+      By signing in, you agree to our
+      <a href="#" class="underline hover:text-blue-600">Terms</a> and
+      <a href="#" class="underline hover:text-blue-600">Privacy Policy</a>.
+    </p>
+  </div>
+
+  <script>
+    function handleGoogleLogin() {
+      window.location.href = "auth/google/login"
+    }
+  </script>
+
+</body>
+</html>
