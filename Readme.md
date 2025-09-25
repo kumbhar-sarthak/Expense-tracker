@@ -1,4 +1,4 @@
-# Expense-Tracker
+# Expense-Tracker 💰💵
 
  This project create sql database locally and simply uses google authentication. store the daily expenses and give total amount of expense to end user.
 
